@@ -7,6 +7,15 @@ Next.js server actions are a way to execute POST requests on the server, such as
 
 <br>
 
+## Notes
+
+Dependencies are in the `./package.json` file.
+
+`npm i daisyui prisma @prisma/client next-auth @auth/prisma-adapter prettier eslint-config-prettier prettier-plugin-tailwindcss zod`
+
+
+<br>
+
 <h3>Website Layout:</h3>
 
 1) Home Page:
