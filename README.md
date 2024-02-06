@@ -9,10 +9,21 @@ Next.js server actions are a way to execute POST requests on the server, such as
 
 ## Notes
 
+Format document shortcut: `Shift + Alt + f`
+
 Dependencies are in the `./package.json` file.
 
 `npm i daisyui prisma @prisma/client next-auth @auth/prisma-adapter prettier eslint-config-prettier prettier-plugin-tailwindcss zod`
 
+Use Prisma.io to work with our MongoDB database. However, prisma also works with sql databases.
+
+Normally in a next.js project, our credentials go into the .env*.local file,
+but the problem is that prisma only looks at the normal .env file, so we
+use that instead.
+
+We can tell prisma to pull the data that we added to the collection and generate a schema from the data: `npx prisma db pull` or push the schema to the database: `npx prisma db push`
+
+`npx prisma generate` generates the prisma client which we can use to call our different database operations on.
 
 <br>
 
