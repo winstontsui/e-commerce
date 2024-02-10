@@ -25,6 +25,12 @@ We can tell prisma to pull the data that we added to the collection and generate
 
 `npx prisma generate` generates the prisma client which we can use to call our different database operations on.
 
+Check remote repository I'm pushing and pulling from: `git remote -v`
+
+Change fetch URL for origin: `git remote set-url origin https://github.com/winstontsui/e-commerce`
+
+Change push URL for origin: `git remote set-url --push origin https://github.com/winstontsui/e-commerce`
+
 <br>
 
 <h3>Website Layout:</h3>
