@@ -1,3 +1,4 @@
+import FormSubmitButton from "@/components/FormSubmitButton";
 import { prisma } from "@/lib/db/prisma";
 import { redirect } from "next/navigation";
 
@@ -5,7 +6,7 @@ export const metadata = {
   title: "Add Product - Winston",
 };
 
-// server action/endpoint to make a POST request on.
+// Server action/endpoint to make a POST request on.
 async function addProduct(formData: FormData) {
   "use server";
 
@@ -57,9 +58,9 @@ export default function AddProductPage() {
           type="number"
           className="input-bordered input mb-3 w-full"
         />
-        <button className="btn-primary btn-block btn" type="submit">
+        <FormSubmitButton className="btn-block" >
           Add Product
-        </button>
+        </FormSubmitButton>
       </form>
     </div>
   );
